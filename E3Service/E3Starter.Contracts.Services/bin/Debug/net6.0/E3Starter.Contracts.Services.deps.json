@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "E3Starter.Contracts.Services/1.0.0": {
+        "dependencies": {
+          "E3Starter.Dtos": "1.0.0"
+        },
+        "runtime": {
+          "E3Starter.Contracts.Services.dll": {}
+        }
+      },
+      "E3Starter.Dtos/1.0.0": {
+        "runtime": {
+          "E3Starter.Dtos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "E3Starter.Contracts.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "E3Starter.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

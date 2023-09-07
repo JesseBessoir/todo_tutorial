@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "E3Starter.Contracts.Persistence/1.0.0": {
+        "dependencies": {
+          "E3Starter.Dtos": "1.0.0",
+          "E3Starter.Models": "1.0.0"
+        },
+        "runtime": {
+          "E3Starter.Contracts.Persistence.dll": {}
+        }
+      },
+      "E3Starter.Dtos/1.0.0": {
+        "runtime": {
+          "E3Starter.Dtos.dll": {}
+        }
+      },
+      "E3Starter.Models/1.0.0": {
+        "runtime": {
+          "E3Starter.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "E3Starter.Contracts.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "E3Starter.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "E3Starter.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

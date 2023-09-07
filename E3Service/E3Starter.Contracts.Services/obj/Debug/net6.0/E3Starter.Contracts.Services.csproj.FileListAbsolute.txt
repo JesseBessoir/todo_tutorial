@@ -1,0 +1,15 @@
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\bin\Debug\net6.0\E3Starter.Contracts.Services.deps.json
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\bin\Debug\net6.0\E3Starter.Contracts.Services.dll
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\bin\Debug\net6.0\E3Starter.Contracts.Services.pdb
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\bin\Debug\net6.0\E3Starter.Dtos.dll
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\bin\Debug\net6.0\E3Starter.Dtos.pdb
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.csproj.AssemblyReference.cache
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.csproj.CopyComplete
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.dll
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\refint\E3Starter.Contracts.Services.dll
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.pdb
+C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\ref\E3Starter.Contracts.Services.dll
