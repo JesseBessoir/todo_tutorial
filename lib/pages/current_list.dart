@@ -1,39 +1,41 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-
+import 'package:todo_tutorial/pages/completed_list.dart';
 import '../models/task.dart';
-import '../widgets/navbar.dart';
+import '../models/priority.dart' as TaskPriority;
 import '../widgets/todo_item.dart';
 import 'package:todo_tutorial/api/api_helpers.dart';
 
 class TodoList extends StatefulWidget {
   const TodoList({super.key, required this.title});
-
   final String title;
 
   @override
-  State<TodoList> createState() => _TodoListState();
+  State<TodoList> createState() => TodoListState();
 }
 
-class _TodoListState extends State<TodoList> {
-// In Flutter, a TextEditingController is a controller class that is commonly used to manage the text input in text form fields,
-// such as TextField and TextFormField. It allows you to interact with and control the text entered by the user in these input fields.
-// TextEditingController is part of the Flutter framework and provides methods and properties for reading, modifying, and listening to the text input.
+class TodoListState extends State<TodoList> {
   final TextEditingController _textFieldController = TextEditingController();
   bool refreshList = false;
-  // we are including refresh list here so that we can trigger refreshlist whenever we do any of the actions like adding a new task or deleting one.
+  // we are including refresh list here so that we can trigger refreshList
+  // whenever we do any of the actions like adding a new task or deleting one.
 
-  Future<List<Task>> getTaskList() async {
-    dynamic response = await fetch('Public/GetTaskList', null);
-    if (response.statusCode == 200) {
-      var decodedList = (jsonDecode(response.body) as List);
-      //Parses the string and returns the resulting Json object.
-      var mapped = decodedList.map((e) => (Task.fromJson(e))).toList();
-      return mapped;
-    }
-    return Future<List<Task>>.value([]);
-  }
+  TaskPriority.Priority defaultPriority = TaskPriority.Priority(id: 0, Name: 'Select a priority', Sequence: 0);
+  TaskPriority.Priority? selectedPriority;
+  List<TaskPriority.Priority> priorityList = <TaskPriority.Priority>[];
+
+  getPriorityList() async {
+    var response = await fetch('Public/GetPriorityList', null);
+        if (response.statusCode == 200)
+          {
+            var decodedList = (jsonDecode(response.body) as List);
+            setState(() {
+              priorityList = decodedList.map((e) => (TaskPriority.Priority.fromJson(e))).toList();
+              refreshList = true;
+            });
+          }
+      }
 
   Future toggleTaskCompleted(Task toggledTask) async {
     dynamic response = await post('Public/ToggleCompleted', toggledTask);
@@ -65,11 +67,17 @@ class _TodoListState extends State<TodoList> {
   @override
   void initState() {
     super.initState();
-    getTaskList();
+    refreshList = true;
+    getTaskList(false);
+    getPriorityList();
   }
 
   void _addTodoItem(String taskName) {
-    var newTask = Task(taskName: taskName, createdAt: DateTime.now());
+    var newTask = Task(
+      taskName: taskName,
+      createdAt: DateTime.now(),
+      priorityId: selectedPriority!.Sequence,
+    );
     saveTask(newTask).then((value) => {
           _textFieldController.clear(),
           setState(() {
@@ -78,15 +86,15 @@ class _TodoListState extends State<TodoList> {
         });
   }
 
-  void _handleTodoChange(Task todo) {
+  void handleTodoChange(Task todo) {
     toggleTaskCompleted(todo).then((value) => {
           setState(() {
             refreshList = true;
-          })
+          }),
         });
   }
 
-  void _deleteTodo(Task todo) {
+  void deleteTodo(Task todo) {
     deactivateTask(todo).then((value) => {
           setState(() {
             refreshList = true;
@@ -94,49 +102,110 @@ class _TodoListState extends State<TodoList> {
         });
   }
 
+  Color getColorForPriority(TaskPriority.Priority priority){
+    switch (priority.Sequence){
+      case 1:
+        return Colors.green;
+      case 2:
+        return Colors.amber;
+      case 3:
+        return Colors.redAccent;
+      default:
+        return Colors.white;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: FutureBuilder(
-          // FutureBuilders allows you to create widgets that depend on the completion of a Future and
-          // automatically rebuilds your UI when the Future completes or changes its state.
-          future: getTaskList(),
-          //declaring the future that will cause it to rebuild.
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return CircularProgressIndicator();
-            }
-            if (snapshot.hasData) {
-              var todos = snapshot.data!;
-              return ListView.builder(
-                itemCount: todos?.length,
-                itemBuilder: (context, index) {
-                  var todo = todos.elementAt(index);
-                  return TaskItem(
-                      todo: todo,
-                      onTaskChanged: _handleTodoChange,
-                      removeTask: _deleteTodo);
-                },
-              );
-            }
-            return Container(); //Handle errors or no items
-          }),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => _displayDialog(),
-        tooltip: 'Add a Todo',
-        child: const Icon(Icons.add),
-      ),
-    );
+        appBar: AppBar(
+          title: Text(widget.title),
+        ),
+        body: Column(
+          children: <Widget>[
+            Expanded(
+              child: FutureBuilder(
+                  future: getTaskList(false),
+                  builder: (context, snapshot) {
+                    if (snapshot.connectionState == ConnectionState.waiting) {
+                      return const CircularProgressIndicator();
+                    }
+                    if (snapshot.hasData) {
+                      var todos = snapshot.data!;
+                      todos.sort((a, b) => b.priorityId.compareTo(a.priorityId));
+                      return ListView.builder(
+                        itemCount: todos.length,
+                        itemBuilder: (context, index) {
+                          var todo = todos.elementAt(index);
+                          var backgroundColor = getColorForPriority(priorityList.firstWhere((element) => element.Sequence == todo.priorityId));
+                          return Card(
+                            color: backgroundColor,
+                            child: Dismissible(
+                              key: Key(todo.taskName),
+                              onDismissed: (DismissDirection direction) {
+                                if (direction == DismissDirection.startToEnd) {
+                                  setState(() {
+                                    deleteTodo(todo);
+                                  });
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                          content: Text(
+                                              '${todo.taskName} dismissed.')));
+                                } else {
+                                  setState(() {
+                                    handleTodoChange(todo);
+                                  });
+                                  ScaffoldMessenger.of(context)
+                                      .showSnackBar(SnackBar(
+                                    content:
+                                        Text('${todo.taskName} completed!'),
+                                  ));
+                                }
+                              },
+                              background: const ColoredBox(
+                                color: Colors.red,
+                              ),
+                              secondaryBackground:
+                                  const ColoredBox(color: Colors.green),
+                              child: TaskItem(
+                                  todo: todo,
+                                  onTaskChanged: handleTodoChange,
+                                  removeTask: deleteTodo
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    }
+                    return Container(); //Handle errors or no items
+                  }),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              onPressed: () async {
+                await Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SecondRoute()));
+              },
+              child: const Text('To Completed Page'),
+            ),
+            FloatingActionButton(
+              onPressed: () => _displayDialog(),
+              tooltip: 'Add a Todo',
+              child: const Icon(Icons.add),
+            ),
+          ],
+        ));
   }
 
-  Future<void> _displayDialog() async {
-    return showDialog<void>(
+  void _displayDialog() {
+    showDialog<void>(
       context: context,
       barrierDismissible: false,
-      builder: (BuildContext context) {
+      builder: (context) {
         return AlertDialog(
           //AlertDialog is how we will be showing the modal to add a new task
           title: const Text('Add a todo'),
@@ -147,6 +216,24 @@ class _TodoListState extends State<TodoList> {
             autofocus: true,
           ),
           actions: <Widget>[
+            DropdownButton<TaskPriority.Priority>(
+              value: selectedPriority,
+              onChanged: (TaskPriority.Priority? newValue) {
+                setState(() {
+                  selectedPriority = newValue!;
+                });
+              },
+              items: priorityList.map<DropdownMenuItem<TaskPriority.Priority>>((priority) {
+                return DropdownMenuItem<TaskPriority.Priority>(
+                  value: priority,
+                  child: Text(
+                      priority.Name,
+                      style: const TextStyle(color: Colors.black),
+                  ),
+                );
+              }).toList(),
+            ),
+
             OutlinedButton(
               style: OutlinedButton.styleFrom(
                 shape: RoundedRectangleBorder(
@@ -170,9 +257,10 @@ class _TodoListState extends State<TodoList> {
               },
               child: const Text('Add'),
             ),
+
           ],
+          );
+          },
         );
-      },
-    );
   }
 }

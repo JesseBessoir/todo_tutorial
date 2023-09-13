@@ -15,4 +15,6 @@ public class TaskDto
     public DateTime? CompletedAt { get; set; }
     public DateTime? DeactivatedAt { get; set; }
     public DateTime? DeletedAt { get; set; }
+    public int PriorityId { get; set; }
+    public PriorityDto Priority { get; set; }
 }

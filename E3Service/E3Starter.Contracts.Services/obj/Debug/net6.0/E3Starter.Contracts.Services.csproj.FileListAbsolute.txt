@@ -13,3 +13,18 @@ C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Start
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\refint\E3Starter.Contracts.Services.dll
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.pdb
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\ref\E3Starter.Contracts.Services.dll
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\bin\Debug\net6.0\E3Starter.Contracts.Services.deps.json
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\bin\Debug\net6.0\E3Starter.Contracts.Services.dll
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\bin\Debug\net6.0\E3Starter.Contracts.Services.pdb
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\bin\Debug\net6.0\E3Starter.Dtos.dll
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\bin\Debug\net6.0\E3Starter.Dtos.pdb
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.csproj.AssemblyReference.cache
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.AssemblyInfoInputs.cache
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.AssemblyInfo.cs
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.csproj.CoreCompileInputs.cache
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.csproj.CopyComplete
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.dll
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\refint\E3Starter.Contracts.Services.dll
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\E3Starter.Contracts.Services.pdb
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Contracts.Services\obj\Debug\net6.0\ref\E3Starter.Contracts.Services.dll

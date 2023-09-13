@@ -9,5 +9,6 @@ public class Tasks : ModelBase
     public virtual DateTime? CompletedAt { get; set; }
     public virtual DateTime CreatedAt { get; set; }
     public virtual DateTime? DeactivatedAt { get; set; }
+    public virtual int PriorityId { get; set; }
 
 }

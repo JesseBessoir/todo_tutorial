@@ -21,6 +21,7 @@ Task _$TaskFromJson(Map<String, dynamic> json) => Task(
       deletedAt: json['deletedAt'] == null
           ? null
           : DateTime.parse(json['deletedAt'] as String),
+      priorityId: json['priorityId'] as int? ?? 0,
     );
 
 Map<String, dynamic> _$TaskToJson(Task instance) => <String, dynamic>{
@@ -30,4 +31,5 @@ Map<String, dynamic> _$TaskToJson(Task instance) => <String, dynamic>{
       'completedAt': instance.completedAt?.toIso8601String(),
       'deactivatedAt': instance.deactivatedAt?.toIso8601String(),
       'deletedAt': instance.deletedAt?.toIso8601String(),
+      'priorityId': instance.priorityId,
     };

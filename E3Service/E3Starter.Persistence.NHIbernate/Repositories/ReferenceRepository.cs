@@ -29,13 +29,34 @@ public class ReferenceRepository : RepositoryBase, IReferenceRepository
     //    return await Session.Query<TaskDto>().ToListAsync();
     //}
 
-    public Task<List<Tasks>> GetAllTasks(bool activeOnly = true)
+    public Task<List<Tasks>> GetAllTasks(bool completedAt)
     {
         var query = Session.Query<Tasks>();
         {
-            query = query.Where(x => x.DeactivatedAt == null && x.DeletedAt == null).OrderBy(x => x.CreatedAt); 
+            if (completedAt)
+            {
+                query = query.Where(t => t.CompletedAt != null && t.DeletedAt == null && t.DeactivatedAt == null).OrderBy(x => x.PriorityId);
+            }
+            else
+            {
+                query = query.Where(x => x.DeactivatedAt == null && x.DeletedAt == null && x.CompletedAt == null).OrderBy(x => x.PriorityId); 
+            }
         }
         return query.ToListAsync();
+    }
+    public async Task<List<Priority>> GetPriorityList()
+    {
+        var query = Session.Query<Priority>();
+        return await query.ToListAsync();
+    }
+
+    public async Task TaskPriority(TaskDto task)
+    {
+        await Session.CreateSQLQuery(@"
+            UPDATE dbo.Tasks SET PriorityId = :priorityId WHERE Id = :taskId")
+            .SetInt32("taskId", task.Id)
+            .SetInt32("priorityId", task.PriorityId)
+            .ExecuteUpdateAsync();
     }
 
     public async Task ToggleTaskComplete(TaskDto completedTask) {
@@ -60,4 +81,5 @@ public class ReferenceRepository : RepositoryBase, IReferenceRepository
         .SetInt32("taskId", deactivatedTask.Id)
         .ExecuteUpdateAsync();
     }
+
 }

@@ -10,3 +10,14 @@ C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Start
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Dtos\obj\Debug\net6.0\refint\E3Starter.Dtos.dll
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Dtos\obj\Debug\net6.0\E3Starter.Dtos.pdb
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Dtos\obj\Debug\net6.0\ref\E3Starter.Dtos.dll
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Dtos\bin\Debug\net6.0\E3Starter.Dtos.deps.json
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Dtos\bin\Debug\net6.0\E3Starter.Dtos.dll
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Dtos\bin\Debug\net6.0\E3Starter.Dtos.pdb
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Dtos\obj\Debug\net6.0\E3Starter.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Dtos\obj\Debug\net6.0\E3Starter.Dtos.AssemblyInfoInputs.cache
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Dtos\obj\Debug\net6.0\E3Starter.Dtos.AssemblyInfo.cs
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Dtos\obj\Debug\net6.0\E3Starter.Dtos.csproj.CoreCompileInputs.cache
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Dtos\obj\Debug\net6.0\E3Starter.Dtos.dll
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Dtos\obj\Debug\net6.0\refint\E3Starter.Dtos.dll
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Dtos\obj\Debug\net6.0\E3Starter.Dtos.pdb
+C:\S2-Projects\todo_tutorial\E3Service\E3Starter.Dtos\obj\Debug\net6.0\ref\E3Starter.Dtos.dll

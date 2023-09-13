@@ -4,10 +4,13 @@ import '../models/task.dart';
 import '../pages/current_list.dart';
 
 class TaskItem extends StatelessWidget {
+  var backgroundColor;
+
   TaskItem(
       {required this.todo,
       required this.onTaskChanged,
-      required this.removeTask})
+      required this.removeTask,
+      })
       : super(key: ObjectKey(todo));
 
   final Task todo;

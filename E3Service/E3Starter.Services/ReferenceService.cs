@@ -31,12 +31,18 @@ namespace E3Starter.Services
             return _mapper.Map<List<RoleDto>>(roles);
         }
 
-        public async Task<List<TaskDto>> GetTaskList()
+        public async Task<List<TaskDto>> GetTaskList(bool completedAt)
         {
             var mappedList = new List<TaskDto>();
-            var results = await _referenceRepository.GetAllTasks(false);
+            var results = await _referenceRepository.GetAllTasks(completedAt);
             foreach ( var result in results)
             {
+                var priorityModel = await _referenceRepository.GetAsync<Priority>(result.PriorityId);
+                var priorityDto = new PriorityDto()
+                {
+                    Name = priorityModel.Name,
+                    Sequence = priorityModel.Sequence
+                };
                 var dto = new TaskDto()
                 {
                     Id = result.Id,
@@ -44,22 +50,40 @@ namespace E3Starter.Services
                     DeactivatedAt = result.DeactivatedAt,
                     CompletedAt = result.CompletedAt,
                     CreatedAt = result.CreatedAt,
-                    DeletedAt = result.DeletedAt
+                    DeletedAt = result.DeletedAt,
+                    PriorityId = result.PriorityId,
+                    Priority = priorityDto 
                 };
                 mappedList.Add(dto);
             }
             return mappedList;
-
-
         }
 
         public async Task SaveTask(TaskDto newTask) {
             var model = new Tasks()
             {
                 TaskName = newTask.TaskName,
-                CreatedAt = newTask.CreatedAt
+                CreatedAt = newTask.CreatedAt,
+                PriorityId = newTask.PriorityId
             };
             await _referenceRepository.SaveAsync(model);
+        }
+
+        public async Task<List<PriorityDto>> GetPriorityList()
+        {
+            var mappedList = new List<PriorityDto>();
+            var results = await _referenceRepository.GetPriorityList();
+            foreach (var result in results)
+            {
+                //var priorityModel = await _referenceRepository.GetAsync<Priority>(result.Id);
+                var thepriorityDto = new PriorityDto()
+                {
+                    Name = result.Name,
+                    Sequence = result.Sequence
+                };
+                mappedList.Add(thepriorityDto);
+            }
+            return mappedList;
         }
 
         public async Task ToggleCompleted(TaskDto completedTask) 
@@ -67,16 +91,19 @@ namespace E3Starter.Services
         
         public async Task DeactivateTask(TaskDto deactivatedTask) 
         => await _referenceRepository.DeactivateTask(deactivatedTask);
-        
 
 
+        //public Task GetPriority(TaskDto priority)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         //public async Task<List<TaskDto>> GetTaskList()
         //{
 
         //        var allTasks = await _referenceRepository.GetAllTasks(false);
         //        return _mapper.Map<List<TaskDto>>(allTasks);
-            
+
         //}
 
     }

@@ -7,7 +7,8 @@ import 'package:http/http.dart' as http;
 import '../models/task.dart';
 
 String baseUrl =
-    'https://ba47-2603-6080-c301-9538-1d29-7874-2453-b945.ngrok-free.app/api/';
+    // 'https://adjusted-fancy-sailfish.ngrok-free.app/api/';
+    'https://49a0-74-218-182-98.ngrok-free.app/api/';
 
 Future<http.Response> post(String path, dynamic payload,
     {bool timeOut = false}) async {
@@ -46,8 +47,8 @@ Future<dynamic> fetch(String path, dynamic parameters) async {
   }
 }
 
-Future<List<Task>> getTaskList() async {
-  dynamic response = await fetch('Public/GetTaskList', null);
+Future<List<Task>> getTaskList(bool completedAt) async {
+  dynamic response = await fetch('Public/GetTaskList/$completedAt', null);
   if (response.statusCode == 200) {
     return (jsonDecode(response.body) as List)
         .map((e) => (Task.fromJson(e)))

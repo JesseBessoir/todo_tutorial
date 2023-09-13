@@ -7782,19 +7782,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Developer\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.MigrationRunner\\E3Starter.MigrationRunner.csproj",
+      "projectUniqueName": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.MigrationRunner\\E3Starter.MigrationRunner.csproj",
       "projectName": "E3Starter.MigrationRunner",
-      "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.MigrationRunner\\E3Starter.MigrationRunner.csproj",
-      "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.MigrationRunner\\obj\\",
+      "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.MigrationRunner\\E3Starter.MigrationRunner.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.MigrationRunner\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7808,8 +7812,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Migrations\\E3Starter.Migrations.csproj": {
-              "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Migrations\\E3Starter.Migrations.csproj"
+            "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Migrations\\E3Starter.Migrations.csproj": {
+              "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Migrations\\E3Starter.Migrations.csproj"
             }
           }
         }
@@ -7857,7 +7861,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

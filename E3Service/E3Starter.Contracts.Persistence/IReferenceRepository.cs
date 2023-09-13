@@ -11,7 +11,8 @@ namespace E3Starter.Contracts.Persistence;
 public interface IReferenceRepository : IRepositoryBase
 {
     Task<List<Role>> GetRolesAsync();
-    Task<List<Tasks>> GetAllTasks(bool activeOnly);
+    Task<List<Tasks>> GetAllTasks(bool completedAt);
+    Task<List<Priority>> GetPriorityList();
     Task ToggleTaskComplete(TaskDto completedTask);
     Task DeactivateTask(TaskDto deactivatedTask);
 

@@ -11,5 +11,6 @@ public class TaskMap : ModelBaseMap<Tasks>
         Map(x => x.CreatedAt);
         Map(x => x.DeactivatedAt).Nullable();
         Map(x => x.DeletedAt).Nullable();
+        Map(x => x.PriorityId);
     }
 }

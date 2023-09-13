@@ -1,4 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:todo_tutorial/pages/current_list.dart';
 
 part 'task.g.dart';
 
@@ -10,6 +11,7 @@ class Task {
   late DateTime? completedAt;
   late DateTime? deactivatedAt;
   late DateTime? deletedAt;
+  late int priorityId;
 
   Task(
       {this.id = 0,
@@ -17,7 +19,9 @@ class Task {
       this.createdAt,
       this.completedAt,
       this.deactivatedAt,
-      this.deletedAt});
+      this.deletedAt,
+      this.priorityId = 0
+      });
 
   factory Task.fromJson(Map<String, dynamic> json) => _$TaskFromJson(json);
 

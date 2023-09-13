@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {}
+    "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
+    "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj",
+        "projectUniqueName": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj",
         "projectName": "E3Starter.Dtos",
-        "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\obj\\",
+        "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

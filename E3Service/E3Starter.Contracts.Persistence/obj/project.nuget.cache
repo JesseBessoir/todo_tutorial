@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BhjIFbFHbcsyd8EVl94o2Onkz9ebPD3xhmasJFPBhrQ4HVgHe+upVYNRqLX71+33FD3NraTjz7yDxOXMdEa8nQ==",
+  "dgSpecHash": "/Te5qYCW3IYG//KV4SYc9dIofsCnADZROWDg0JmVwXaUzRNiL5DwjTROsc9LV1Cs5Gfhhn9f7CokCmLqt08y2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj",
+  "projectFilePath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

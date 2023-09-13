@@ -10,10 +10,10 @@ namespace E3Starter.Contracts.Services
     public interface IReferenceService
     {
         Task<List<RoleDto>> GetRolesAsync();
-        Task<List<TaskDto>> GetTaskList();
+        Task<List<TaskDto>> GetTaskList(bool completedAt);
+        Task<List<PriorityDto>> GetPriorityList();
         Task SaveTask(TaskDto newTask);
         Task ToggleCompleted(TaskDto completedTask);
         Task DeactivateTask(TaskDto deactivatedTask);
-
     }
 }

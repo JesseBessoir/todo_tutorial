@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Configuration\\E3Starter.Configuration.csproj": {}
+    "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Configuration\\E3Starter.Configuration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Configuration\\E3Starter.Configuration.csproj": {
+    "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Configuration\\E3Starter.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Configuration\\E3Starter.Configuration.csproj",
+        "projectUniqueName": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Configuration\\E3Starter.Configuration.csproj",
         "projectName": "E3Starter.Configuration",
-        "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Configuration\\E3Starter.Configuration.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Configuration\\obj\\",
+        "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Configuration\\E3Starter.Configuration.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Configuration\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,17 +31,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj"
               },
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj"
               },
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\E3Starter.Persistence.NHIbernate.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\E3Starter.Persistence.NHIbernate.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\E3Starter.Persistence.NHIbernate.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\E3Starter.Persistence.NHIbernate.csproj"
               },
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\E3Starter.Services.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\E3Starter.Services.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\E3Starter.Services.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\E3Starter.Services.csproj"
               }
             }
           }
@@ -86,21 +89,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj": {
+    "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj",
+        "projectUniqueName": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj",
         "projectName": "E3Starter.Contracts.Persistence",
-        "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\obj\\",
+        "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,11 +120,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj"
               },
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj"
               }
             }
           }
@@ -148,21 +154,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj": {
+    "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj",
+        "projectUniqueName": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj",
         "projectName": "E3Starter.Contracts.Services",
-        "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\obj\\",
+        "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,8 +185,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj"
               }
             }
           }
@@ -207,21 +216,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
+    "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj",
+        "projectUniqueName": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj",
         "projectName": "E3Starter.Dtos",
-        "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\obj\\",
+        "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -262,21 +274,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj": {
+    "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj",
+        "projectUniqueName": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj",
         "projectName": "E3Starter.Models",
-        "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\obj\\",
+        "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -317,21 +332,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\E3Starter.Persistence.NHIbernate.csproj": {
+    "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\E3Starter.Persistence.NHIbernate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\E3Starter.Persistence.NHIbernate.csproj",
+        "projectUniqueName": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\E3Starter.Persistence.NHIbernate.csproj",
         "projectName": "E3Starter.Persistence.NHIbernate",
-        "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\E3Starter.Persistence.NHIbernate.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\obj\\",
+        "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\E3Starter.Persistence.NHIbernate.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Persistence.NHIbernate\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -345,11 +363,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj"
               },
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Models\\E3Starter.Models.csproj"
               }
             }
           }
@@ -397,21 +415,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\E3Starter.Services.csproj": {
+    "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\E3Starter.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\E3Starter.Services.csproj",
+        "projectUniqueName": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\E3Starter.Services.csproj",
         "projectName": "E3Starter.Services",
-        "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\E3Starter.Services.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\obj\\",
+        "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\E3Starter.Services.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -425,14 +446,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Persistence\\E3Starter.Contracts.Persistence.csproj"
               },
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Contracts.Services\\E3Starter.Contracts.Services.csproj"
               },
-              "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
-                "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj"
+              "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj": {
+                "projectPath": "C:\\S2-Projects\\todo_tutorial\\E3Service\\E3Starter.Dtos\\E3Starter.Dtos.csproj"
               }
             }
           }
@@ -472,7 +493,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

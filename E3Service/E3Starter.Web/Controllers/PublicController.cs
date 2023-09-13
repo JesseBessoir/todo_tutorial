@@ -62,12 +62,13 @@ public class PublicController : Controller
         return tokenString;
     }
 
-    [HttpGet("[action]")]
-    public async Task<List<TaskDto>> GetTaskList()
+    [HttpGet("[action]/{ActiveOnly}")]
+    public async Task<List<TaskDto>> GetTaskList(bool ActiveOnly)
     {
         try
         {
-            var data = await _referenceService.GetTaskList();
+            //var ActiveOnly = Request.Query["ActiveOnly"];
+            var data = await _referenceService.GetTaskList(ActiveOnly);
             return data;
         }
         catch (Exception ex)
@@ -76,7 +77,29 @@ public class PublicController : Controller
             return new List<TaskDto>();
         }
     }
-    
+
+    //[HttpGet("[action]")]
+    //public async Task<List<TaskDto>> GetPriority([FromBody]TaskDto Priority)
+    //{
+    //    await _referenceService.GetPriority(Priority);
+    //    return new List<TaskDto>();
+    //}
+
+    [HttpGet("[action]")]
+    public async Task<List<PriorityDto>> GetPriorityList()
+    {
+        try
+        {
+            var result = await _referenceService.GetPriorityList();
+            return result;
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex, "error getting priority list");
+            return new List<PriorityDto>();
+        }
+    }
+
     [HttpPost("[action]")]
     public async Task<StatusCodeResult> SaveTask([FromBody]TaskDto newTask)
     {
