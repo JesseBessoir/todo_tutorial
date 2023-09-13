@@ -10,4 +10,5 @@ public class Tasks : ModelBase
     public virtual DateTime CreatedAt { get; set; }
     public virtual DateTime? DeactivatedAt { get; set; }
 
+    public virtual IList<Categories> Categories { get; set; }
 }

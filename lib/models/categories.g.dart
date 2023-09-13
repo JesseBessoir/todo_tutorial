@@ -1,0 +1,26 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'categories.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+Categories _$CategoriesFromJson(Map<String, dynamic> json) => Categories(
+      id: json['id'] as int? ?? 0,
+      categoryName: json['categoryName'] as String? ?? '',
+      createdAt: json['createdAt'] == null
+          ? null
+          : DateTime.parse(json['createdAt'] as String),
+      deactivatedAt: json['deactivatedAt'] == null
+          ? null
+          : DateTime.parse(json['deactivatedAt'] as String),
+    );
+
+Map<String, dynamic> _$CategoriesToJson(Categories instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'categoryName': instance.categoryName,
+      'createdAt': instance.createdAt?.toIso8601String(),
+      'deactivatedAt': instance.deactivatedAt?.toIso8601String(),
+    };

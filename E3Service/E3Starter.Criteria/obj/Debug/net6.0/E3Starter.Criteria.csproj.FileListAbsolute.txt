@@ -10,3 +10,14 @@ C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Start
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Criteria\obj\Debug\net6.0\refint\E3Starter.Criteria.dll
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Criteria\obj\Debug\net6.0\E3Starter.Criteria.pdb
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Criteria\obj\Debug\net6.0\ref\E3Starter.Criteria.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Criteria\bin\Debug\net6.0\E3Starter.Criteria.deps.json
+C:\Projects\todo_tutorial\E3Service\E3Starter.Criteria\bin\Debug\net6.0\E3Starter.Criteria.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Criteria\bin\Debug\net6.0\E3Starter.Criteria.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Criteria\obj\Debug\net6.0\E3Starter.Criteria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\todo_tutorial\E3Service\E3Starter.Criteria\obj\Debug\net6.0\E3Starter.Criteria.AssemblyInfoInputs.cache
+C:\Projects\todo_tutorial\E3Service\E3Starter.Criteria\obj\Debug\net6.0\E3Starter.Criteria.AssemblyInfo.cs
+C:\Projects\todo_tutorial\E3Service\E3Starter.Criteria\obj\Debug\net6.0\E3Starter.Criteria.csproj.CoreCompileInputs.cache
+C:\Projects\todo_tutorial\E3Service\E3Starter.Criteria\obj\Debug\net6.0\E3Starter.Criteria.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Criteria\obj\Debug\net6.0\refint\E3Starter.Criteria.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Criteria\obj\Debug\net6.0\E3Starter.Criteria.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Criteria\obj\Debug\net6.0\ref\E3Starter.Criteria.dll

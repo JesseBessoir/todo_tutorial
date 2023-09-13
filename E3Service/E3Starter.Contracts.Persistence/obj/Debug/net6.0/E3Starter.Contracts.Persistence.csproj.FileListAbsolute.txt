@@ -15,3 +15,20 @@ C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Start
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\refint\E3Starter.Contracts.Persistence.dll
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\E3Starter.Contracts.Persistence.pdb
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\ref\E3Starter.Contracts.Persistence.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\bin\Debug\net6.0\E3Starter.Contracts.Persistence.deps.json
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\bin\Debug\net6.0\E3Starter.Contracts.Persistence.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\bin\Debug\net6.0\E3Starter.Contracts.Persistence.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\bin\Debug\net6.0\E3Starter.Dtos.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\bin\Debug\net6.0\E3Starter.Models.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\bin\Debug\net6.0\E3Starter.Dtos.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\bin\Debug\net6.0\E3Starter.Models.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\E3Starter.Contracts.Persistence.csproj.AssemblyReference.cache
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\E3Starter.Contracts.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\E3Starter.Contracts.Persistence.AssemblyInfoInputs.cache
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\E3Starter.Contracts.Persistence.AssemblyInfo.cs
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\E3Starter.Contracts.Persistence.csproj.CoreCompileInputs.cache
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\E3Starter.Contracts.Persistence.csproj.CopyComplete
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\E3Starter.Contracts.Persistence.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\refint\E3Starter.Contracts.Persistence.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\E3Starter.Contracts.Persistence.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Contracts.Persistence\obj\Debug\net6.0\ref\E3Starter.Contracts.Persistence.dll

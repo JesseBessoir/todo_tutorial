@@ -31,10 +31,30 @@ namespace E3Starter.Services
             return _mapper.Map<List<RoleDto>>(roles);
         }
 
-        public async Task<List<TaskDto>> GetTaskList()
+        public async Task<List<CategoriesDto>> GetCategoryList(TaskSearchCriteriaDto criteria)
+        {
+            var mappedList = new List<CategoriesDto>();
+            var results = await _referenceRepository.GetAllCategories(criteria);
+            foreach (var result in results)
+            {
+                var dto = new CategoriesDto()
+                {
+                    Id = result.Id,
+                    CategoryName = result.CategoryName,
+                    DeactivatedAt = result.DeactivatedAt,
+                    CreatedAt = result.CreatedAt,
+                };
+                mappedList.Add(dto);
+            }
+            return mappedList;
+
+
+        }
+
+        public async Task<List<TaskDto>> GetTaskList(TaskSearchCriteriaDto criteria)
         {
             var mappedList = new List<TaskDto>();
-            var results = await _referenceRepository.GetAllTasks(false);
+            var results = await _referenceRepository.GetAllTasks(criteria);
             foreach ( var result in results)
             {
                 var dto = new TaskDto()
@@ -53,13 +73,31 @@ namespace E3Starter.Services
 
         }
 
+        //public async Task<List<TaskCategoriesDto>> GetCategoryList()
+        //{
+
+        //}
+
         public async Task SaveTask(TaskDto newTask) {
+
             var model = new Tasks()
             {
                 TaskName = newTask.TaskName,
                 CreatedAt = newTask.CreatedAt
+               
             };
-            await _referenceRepository.SaveAsync(model);
+            
+            model = await _referenceRepository.CreateAsync(model);
+
+            foreach (var c in newTask.Categories)
+            {
+                var newTaskCategory = new TaskCategories() 
+                { 
+                    CategoryId = c.Id,
+                    TaskId = model.Id
+                };
+                await _referenceRepository.CreateAsync(newTaskCategory);
+            }
         }
 
         public async Task ToggleCompleted(TaskDto completedTask) 

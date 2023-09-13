@@ -3,13 +3,13 @@ using FluentMigrator.Runner;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-long _version = 0;
+long _version = 3;
 bool _migrateDown = false;
 
 if (args != null && args.Length > 0)
 {
     _version = long.Parse(args[0]);
-    _migrateDown = true;
+    _migrateDown = false;
 }
 
 var builder = new ConfigurationBuilder()

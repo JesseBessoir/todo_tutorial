@@ -1,0 +1,17 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+TaskSearchCriteria _$TaskSearchCriteriaFromJson(Map<String, dynamic> json) =>
+    TaskSearchCriteria(
+      completedAt: json['completedAt'] as bool? ?? false,
+      categoryIds: (json['categoryIds'] as List<dynamic>?)
+          ?.map((e) => e as int)
+          .toList(),
+    );
+
+Map<String, dynamic> _$TaskSearchCriteriaToJson(TaskSearchCriteria instance) =>
+    <String, dynamic>{
+      'completedAt': instance.completedAt,
+      'categoryIds': instance.categoryIds,
+    };

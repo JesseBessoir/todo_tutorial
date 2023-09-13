@@ -11,5 +11,10 @@ public class TaskMap : ModelBaseMap<Tasks>
         Map(x => x.CreatedAt);
         Map(x => x.DeactivatedAt).Nullable();
         Map(x => x.DeletedAt).Nullable();
+        HasManyToMany(x => x.Categories)
+            .Cascade.All()
+            .Table("TaskCategories")
+            .ParentKeyColumn("TaskId")
+            .ChildKeyColumn("CategoryId");
     }
 }

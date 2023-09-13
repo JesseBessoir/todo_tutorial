@@ -23,3 +23,28 @@ C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Start
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\refint\E3Starter.Configuration.dll
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\E3Starter.Configuration.pdb
 C:\Users\Developer\Desktop\Code\Flutter Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\ref\E3Starter.Configuration.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Configuration.deps.json
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Configuration.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Configuration.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Contracts.Persistence.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Contracts.Services.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Dtos.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Models.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Persistence.NHIbernate.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Services.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Contracts.Services.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Dtos.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Persistence.NHIbernate.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Services.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Contracts.Persistence.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\bin\Debug\net6.0\E3Starter.Models.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\E3Starter.Configuration.csproj.AssemblyReference.cache
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\E3Starter.Configuration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\E3Starter.Configuration.AssemblyInfoInputs.cache
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\E3Starter.Configuration.AssemblyInfo.cs
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\E3Starter.Configuration.csproj.CoreCompileInputs.cache
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\E3Starter.Configuration.csproj.CopyComplete
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\E3Starter.Configuration.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\refint\E3Starter.Configuration.dll
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\E3Starter.Configuration.pdb
+C:\Projects\todo_tutorial\E3Service\E3Starter.Configuration\obj\Debug\net6.0\ref\E3Starter.Configuration.dll

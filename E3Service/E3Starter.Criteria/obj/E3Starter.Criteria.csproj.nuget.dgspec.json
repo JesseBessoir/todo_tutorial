@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Criteria\\E3Starter.Criteria.csproj": {}
+    "C:\\Projects\\todo_tutorial\\E3Service\\E3Starter.Criteria\\E3Starter.Criteria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Criteria\\E3Starter.Criteria.csproj": {
+    "C:\\Projects\\todo_tutorial\\E3Service\\E3Starter.Criteria\\E3Starter.Criteria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Criteria\\E3Starter.Criteria.csproj",
+        "projectUniqueName": "C:\\Projects\\todo_tutorial\\E3Service\\E3Starter.Criteria\\E3Starter.Criteria.csproj",
         "projectName": "E3Starter.Criteria",
-        "projectPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Criteria\\E3Starter.Criteria.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Desktop\\Code\\Flutter Projects\\todo_tutorial\\E3Service\\E3Starter.Criteria\\obj\\",
+        "projectPath": "C:\\Projects\\todo_tutorial\\E3Service\\E3Starter.Criteria\\E3Starter.Criteria.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\todo_tutorial\\E3Service\\E3Starter.Criteria\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

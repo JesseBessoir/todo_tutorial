@@ -3,9 +3,10 @@
 import 'package:build_runner_core/build_runner_core.dart' as _i1;
 import 'package:json_serializable/builder.dart' as _i2;
 import 'package:source_gen/builder.dart' as _i3;
-import 'dart:isolate' as _i4;
-import 'package:build_runner/build_runner.dart' as _i5;
-import 'dart:io' as _i6;
+import 'package:build_resolvers/builder.dart' as _i4;
+import 'dart:isolate' as _i5;
+import 'package:build_runner/build_runner.dart' as _i6;
+import 'dart:io' as _i7;
 
 final _builders = <_i1.BuilderApplication>[
   _i1.apply(
@@ -22,6 +23,13 @@ final _builders = <_i1.BuilderApplication>[
     hideOutput: false,
     appliesBuilders: const [r'source_gen:part_cleanup'],
   ),
+  _i1.apply(
+    r'build_resolvers:transitive_digests',
+    [_i4.transitiveDigestsBuilder],
+    _i1.toAllPackages(),
+    isOptional: true,
+    hideOutput: true,
+  ),
   _i1.applyPostProcess(
     r'source_gen:part_cleanup',
     _i3.partCleanup,
@@ -29,12 +37,12 @@ final _builders = <_i1.BuilderApplication>[
 ];
 void main(
   List<String> args, [
-  _i4.SendPort? sendPort,
+  _i5.SendPort? sendPort,
 ]) async {
-  var result = await _i5.run(
+  var result = await _i6.run(
     args,
     _builders,
   );
   sendPort?.send(result);
-  _i6.exitCode = result;
+  _i7.exitCode = result;
 }

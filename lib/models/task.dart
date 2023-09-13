@@ -1,5 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 
+import 'categories.dart';
+
 part 'task.g.dart';
 
 @JsonSerializable()
@@ -10,6 +12,7 @@ class Task {
   late DateTime? completedAt;
   late DateTime? deactivatedAt;
   late DateTime? deletedAt;
+  late List<Categories> categories;
 
   Task(
       {this.id = 0,
@@ -17,7 +20,11 @@ class Task {
       this.createdAt,
       this.completedAt,
       this.deactivatedAt,
-      this.deletedAt});
+      this.deletedAt,
+        categories
+      })
+      : categories = categories ?? [];
+
 
   factory Task.fromJson(Map<String, dynamic> json) => _$TaskFromJson(json);
 

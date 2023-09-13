@@ -62,12 +62,27 @@ public class PublicController : Controller
         return tokenString;
     }
 
-    [HttpGet("[action]")]
-    public async Task<List<TaskDto>> GetTaskList()
+    [HttpPost("[action]")]
+    public async Task<List<CategoriesDto>> GetCategoryList([FromBody] TaskSearchCriteriaDto criteria)
     {
         try
         {
-            var data = await _referenceService.GetTaskList();
+            var data = await _referenceService.GetCategoryList(criteria);
+            return data;
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex, "error getting category list");
+            return new List<CategoriesDto>();
+        }
+    }
+
+    [HttpPost("[action]")]
+    public async Task<List<TaskDto>> GetTaskList([FromBody] TaskSearchCriteriaDto criteria)
+    {
+        try
+        {
+            var data = await _referenceService.GetTaskList(criteria);
             return data;
         }
         catch (Exception ex)
@@ -91,6 +106,7 @@ public class PublicController : Controller
             return new StatusCodeResult(StatusCodes.Status500InternalServerError);
         }
     }
+
     [HttpPost("[action]")]
     public async Task<StatusCodeResult> ToggleCompleted([FromBody]TaskDto completedTask)
     {
