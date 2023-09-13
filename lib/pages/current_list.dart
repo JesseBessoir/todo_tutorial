@@ -18,7 +18,8 @@ class TodoList extends StatefulWidget {
 class TodoListState extends State<TodoList> {
   final TextEditingController _textFieldController = TextEditingController();
   bool refreshList = false;
-  // we are including refresh list here so that we can trigger refreshList
+  bool refreshModal = false;
+  // we are including refreshList here so that we can trigger refreshList
   // whenever we do any of the actions like adding a new task or deleting one.
 
   TaskPriority.Priority defaultPriority = TaskPriority.Priority(id: 0, Name: 'Select a priority', Sequence: 0);
@@ -105,7 +106,7 @@ class TodoListState extends State<TodoList> {
   Color getColorForPriority(TaskPriority.Priority priority){
     switch (priority.Sequence){
       case 1:
-        return Colors.green;
+        return Colors.greenAccent;
       case 2:
         return Colors.amber;
       case 3:
@@ -193,7 +194,7 @@ class TodoListState extends State<TodoList> {
               child: const Text('To Completed Page'),
             ),
             FloatingActionButton(
-              onPressed: () => _displayDialog(),
+              onPressed: () => _displayDialog(selectedPriority),
               tooltip: 'Add a Todo',
               child: const Icon(Icons.add),
             ),
@@ -201,7 +202,7 @@ class TodoListState extends State<TodoList> {
         ));
   }
 
-  void _displayDialog() {
+  void _displayDialog(TaskPriority.Priority? priorityParam) {
     showDialog<void>(
       context: context,
       barrierDismissible: false,
@@ -217,7 +218,7 @@ class TodoListState extends State<TodoList> {
           ),
           actions: <Widget>[
             DropdownButton<TaskPriority.Priority>(
-              value: selectedPriority,
+              value: priorityParam ?? priorityList.first,
               onChanged: (TaskPriority.Priority? newValue) {
                 setState(() {
                   selectedPriority = newValue!;

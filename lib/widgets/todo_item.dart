@@ -40,17 +40,17 @@ class TaskItem extends StatelessWidget {
           //  The Expanded widget ensures that the text takes up as much horizontal space as possible.
           child: Text(todo.taskName),
         ),
-        IconButton(
-          iconSize: 30,
-          icon: const Icon(
-            Icons.delete,
-            color: Colors.red,
-          ),
-          alignment: Alignment.centerRight,
-          onPressed: () {
-            removeTask(todo);
-          },
-        ),
+        // IconButton(
+        //   iconSize: 30,
+        //   icon: const Icon(
+        //     Icons.delete,
+        //     color: Colors.red,
+        //   ),
+        //   alignment: Alignment.centerRight,
+        //   onPressed: () {
+        //     removeTask(todo);
+        //   },
+        // ),
         //In the same Row, there's an IconButton with a trash can icon (from Icons.delete). When pressed, it calls the removeTask callback to delete the task
         // The onTaskChanged and removeTask callbacks would be responsible for updating the task's status and removing it from the list, respectively.
       ]),

@@ -8,7 +8,7 @@ import '../models/task.dart';
 
 String baseUrl =
     // 'https://adjusted-fancy-sailfish.ngrok-free.app/api/';
-    'https://49a0-74-218-182-98.ngrok-free.app/api/';
+    'https://6e67-74-218-182-98.ngrok-free.app/api/';
 
 Future<http.Response> post(String path, dynamic payload,
     {bool timeOut = false}) async {
